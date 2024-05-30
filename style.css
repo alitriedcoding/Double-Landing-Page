@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 100px;
+  backdrop-filter: brightness(0.8);
+}
+.splite {
+  height: 100%;
+  width: 50%;
+  top: 0;
+  position: relative;
+}
+.splite.left {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  background-color: pink;
+  background-image: url(iphon.png);
+  background-size: cover;
+  transition: width 1s ease-in-out;
+  overflow: hidden;
+}
+.splite.right {
+  position: absolute;
+  right: 0;
+  background-image: url(sumsong.png);
+  background-size: cover;
+  text-align: center;
+  transition: width 1s ease-in-out;
+  overflow: hidden;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: #847d7d;
+  cursor: pointer;
+}
+
+.active-left .left {
+  width: 70%;
+}
+.active-left .right {
+  width: 30%;
+}
+.active-right .right {
+  width: 70%;
+}
+.active-right .left {
+  width: 30%;
+}
